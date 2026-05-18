@@ -1,7 +1,7 @@
 {
   "buildCommand": "pnpm --filter @workspace/alumni-direct run build",
   "outputDirectory": "artifacts/alumni-direct/dist/public",
-  "installCommand": "pnpm install --ignore-scripts",
+  "installCommand": "pnpm install",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],
