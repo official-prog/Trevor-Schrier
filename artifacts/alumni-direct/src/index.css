@@ -323,3 +323,17 @@
     inset: -1px;
   }
 }
+
+.depth-bg { filter: blur(1.5px); will-change: transform; }
+.depth-mid { will-change: transform; }
+.depth-fg { will-change: transform; }
+.mask-fade-bottom { mask-image: linear-gradient(to bottom, black 75%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%); }
+.mask-fade-top { mask-image: linear-gradient(to top, black 75%, transparent 100%); -webkit-mask-image: linear-gradient(to top, black 75%, transparent 100%); }
+.mask-fade-both { mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%); }
+
+@keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.marquee-track { animation: marquee 25s linear infinite; display: flex; width: max-content; }
+.marquee-wrapper { overflow: hidden; mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent 100%); }
+
+@keyframes scanline { 0% { top: -4px; } 100% { top: 100%; } }
+.scan-line { animation: scanline 3s linear infinite; position: absolute; left: 0; right: 0; height: 4px; background: linear-gradient(to bottom, transparent, hsl(var(--primary)/0.4), transparent); pointer-events: none; }
