@@ -1,0 +1,12 @@
+{
+  "buildCommand": "pnpm --filter @workspace/alumni-direct run build",
+  "outputDirectory": "artifacts/alumni-direct/dist/public",
+  "installCommand": "pnpm install --ignore-scripts",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "env": {
+    "BASE_PATH": "/",
+    "PORT": "3000"
+  }
+}
