@@ -65,7 +65,7 @@ onlyBuiltDependencies:
   - unrs-resolver
 
 overrides:
-  # replit uses linux-x64 only, we can exclude all other platforms
+  # Vercel uses linux-x64 only, we can exclude all other platforms
   # "esbuild>@esbuild/darwin-arm64": "-"  # re-enabled for local macOS dev
   # "esbuild>@esbuild/darwin-x64": "-"    # re-enabled for local macOS dev
   "esbuild>@esbuild/freebsd-arm64": "-"
