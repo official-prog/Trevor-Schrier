@@ -5,9 +5,5 @@
   "outputDirectory": "artifacts/alumni-direct/dist",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
-  ],
-  "env": {
-    "BASE_PATH": "/",
-    "PORT": "3000"
-  }
+  ]
 }
